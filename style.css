@@ -1,0 +1,43 @@
+/* body {
+  background-color: blue;
+  color: white;
+}
+
+h1 {
+  color: yellow;
+}
+
+h2 {
+  color: aquamarine;
+} */
+
+#wrapper .wrapper p {
+  color: blue;
+}
+
+/* 2 gold, 2 silver, 0 bronze */
+#wrapper #inner-wrapper .text.paragraph {
+  color: red;
+}
+
+#wrapper #inner-wrapper p {
+  color: teal;
+}
+
+/* 2 gold, 2 silver, 0 bronze */
+.wrapper.something #inner-wrapper #text {
+  color: pink;
+}
+
+div.wrapper.something .paragraph#text {
+  color: lightgreen;
+}
+
+/* 2 gold, 2 silver, 0 bronze */
+#inner-wrapper.inner-wrapper #text.paragraph {
+  color: chartreuse;
+}
+
+.wrapper.something .paragraph {
+  color: coral;
+}

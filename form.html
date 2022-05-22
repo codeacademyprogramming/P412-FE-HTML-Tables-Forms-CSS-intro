@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Form elements</title>
+  </head>
+  <body>
+    <!-- Form example -->
+    <!-- 
+        Firstname
+        Lastname
+        Birthdate
+        Gender
+        E-mail
+        Password
+        Confirm password
+        Your work
+        Hobbies
+     -->
+    <form autocomplete="off">
+      <!-- type - text, password, email, number -->
+      <div>
+        <label for="firstname">Firstname:</label> <br />
+        <input
+          type="text"
+          placeholder="enter your firstname"
+          id="firstname"
+          name="firstname"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="lastname">Lastname:</label> <br />
+        <input
+          type="text"
+          placeholder="enter your lastname"
+          id="lastname"
+          name="lastname"
+          minlength="2"
+          maxlength="50"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="birthdate">Birthdate:</label> <br />
+        <input type="date" id="birthdate" />
+      </div>
+
+      <div>
+        <label for="email">Email:</label> <br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@gmail.com"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="password">Password:</label> <br />
+        <input type="password" id="password" required name="password" />
+      </div>
+
+      <div>
+        <label for="confirm-password">Confirm password:</label> <br />
+        <input
+          type="password"
+          id="confirm-password"
+          required
+          name="confirm-password"
+        />
+      </div>
+
+      <div>
+        <label for="profession">Profession</label> <br />
+        <select name="profession" id="profession">
+          <optgroup label="IT">
+            <option value="fronted_developer">Frontend Developer</option>
+            <option value="backend_developer">Backend Developer</option>
+            <option value="fullstack_developer">Fullstack Developer</option>
+            <option value="smm">SMM</option>
+          </optgroup>
+          <optgroup label="Finance">
+            <option value="consultant">Consultant</option>
+            <option value="accountant">Accountant</option>
+            <option value="audit">Audit</option>
+          </optgroup>
+          <optgroup label="Medical">
+            <option value="nurse">Nurse</option>
+            <option value="doctor">Doctor</option>
+          </optgroup>
+          <optgroup label="Education">
+            <option value="teacher">Teacher</option>
+            <option value="director">Director</option>
+          </optgroup>
+
+          <optgroup label="Other">
+            <option value="process_engineer">Process Engineer</option>
+            <option value="unemployed">Unemployed</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div>
+        <label>Hobbies:</label> <br />
+
+        <label for="football">
+          Football
+          <input
+            type="checkbox"
+            name="hobbies"
+            id="football"
+            value="football"
+            checked
+          />
+        </label>
+
+        <label for="reading_books">
+          Reading books
+          <input
+            type="checkbox"
+            name="hobbies"
+            id="reading_books"
+            value="reading_books"
+          />
+        </label>
+
+        <label for="music">
+          Music
+          <input type="checkbox" name="hobbies" id="music" value="music" />
+        </label>
+      </div>
+
+      <div>
+        <label>Gender:</label> <br />
+
+        <label for="male">
+          Male
+          <input type="radio" value="male" name="gender" id="male" />
+        </label>
+
+        <br />
+
+        <label for="female">
+          Female
+          <input type="radio" value="female" name="gender" id="female" />
+        </label>
+
+        <br />
+        <label for="other">
+          Other
+          <input type="radio" value="other" name="gender" id="other" />
+        </label>
+      </div>
+
+      <input type="color" name="" id="" />
+      <!-- <input type="submit" value="click me" /> -->
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
